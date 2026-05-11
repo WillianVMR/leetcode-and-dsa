@@ -1,4 +1,4 @@
-# Arrays
+# Arrays - Good for cache
 
 ## Static vs Dynamic Arrays
 
@@ -78,16 +78,16 @@ Python's `list` is a dynamic array internally (array of pointers). There is no b
 
 ### Key Differences
 
-| | Static | Dynamic |
-| --- | --- | --- |
-| Size | Fixed at compile time | Variable at runtime |
-| Memory location | Stack / static memory | Heap |
-| Insert at end | N/A (full) | O(1) amortized |
-| Resize | N/A | O(n) — copies all elements |
-| Access by index | O(1) | O(1) |
-| Insert/delete middle | O(n) | O(n) |
-| Memory usage | Exact allocation | Over-allocates for growth |
-| Cache performance | Excellent (contiguous) | Good (contiguous, but pointer indirection in Python) |
-| Safety | Fewer memory leaks | Risk of fragmentation / memory leaks |
-| Advantage | Performance | Flexibility |
-| Best for | Performance-critical (C, Rust) | General-purpose (JS, Python, C++ vector, Java ArrayList) |
+|                      | Static                         | Dynamic                                                  |
+| -------------------- | ------------------------------ | -------------------------------------------------------- |
+| Size                 | Fixed at compile time          | Variable at runtime                                      |
+| Memory location      | Stack / static memory          | Heap                                                     |
+| Insert at end        | N/A (full)                     | O(1) amortized                                           |
+| Resize               | N/A                            | O(n) — copies all elements                               |
+| Access by index      | O(1)                           | O(1)                                                     |
+| Insert/delete middle | O(n)                           | O(n)                                                     |
+| Memory usage         | Exact allocation               | Over-allocates for growth                                |
+| Cache performance    | Excellent (contiguous)         | Good (contiguous, but pointer indirection in Python)     |
+| Safety               | Fewer memory leaks             | Risk of fragmentation / memory leaks                     |
+| Advantage            | Performance                    | Flexibility                                              |
+| Best for             | Performance-critical (C, Rust) | General-purpose (JS, Python, C++ vector, Java ArrayList) |
