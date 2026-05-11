@@ -2,6 +2,7 @@ from collections import Counter
 from typing import List
 
 
+# Time: O(n) | Space: O(n)
 class Solution:
     def findErrorNums(self, nums: List[int]) -> List[int]:
         count = Counter(nums)

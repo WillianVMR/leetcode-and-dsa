@@ -1,3 +1,4 @@
+# Time: O() | Space: O()
 class Solution:
     def solve(self):
         pass
